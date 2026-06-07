@@ -1,0 +1,35 @@
+# Static extrinsics for the TerraBase Go2 integration.
+#
+# Convention:
+# - `sensor` is an AEDE compatibility frame colocated with `base_link`.
+# - Physical Go2 radar/LiDAR extrinsics come from the Go2 URDF `radar` link.
+# - ZED values below are the measured `sensor`/`base_link` -> ZED optical frame.
+
+go2_aede_bridge:
+  ros__parameters:
+    sensor_x: 0.0
+    sensor_y: 0.0
+    sensor_z: 0.0
+    sensor_roll: 0.0
+    sensor_pitch: 0.0
+    sensor_yaw: 0.0
+
+stepp_depth_projector:
+  ros__parameters:
+    camera_frame: ""
+    sensor_to_camera_x: 0.28945
+    sensor_to_camera_y: 0.06
+    sensor_to_camera_z: 0.103175
+    sensor_to_camera_roll: -1.57079632679
+    sensor_to_camera_pitch: 0.0
+    sensor_to_camera_yaw: -1.57079632679
+
+localPlanner:
+  ros__parameters:
+    sensorOffsetX: 0.0
+    sensorOffsetY: 0.0
+
+pathFollower:
+  ros__parameters:
+    sensorOffsetX: 0.0
+    sensorOffsetY: 0.0

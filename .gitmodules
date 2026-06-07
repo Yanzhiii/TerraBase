@@ -1,0 +1,15 @@
+[submodule "third_party/go2_ros2_sdk"]
+	path = third_party/go2_ros2_sdk
+	url = https://github.com/Yanzhiii/go2_ros2_sdk.git
+	branch = master
+[submodule "third_party/autonomous_exploration_development_environment"]
+	path = third_party/autonomous_exploration_development_environment
+	url = https://github.com/Yanzhiii/autonomous_exploration_development_environment.git
+	branch = humble
+[submodule "third_party/STEPP-Code"]
+	path = third_party/STEPP-Code
+	url = https://github.com/Yanzhiii/STEPP-Code.git
+	branch = main
+[submodule "third_party/zed-ros2-wrapper"]
+	path = third_party/zed-ros2-wrapper
+	url = https://github.com/stereolabs/zed-ros2-wrapper.git

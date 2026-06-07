@@ -1,0 +1,33 @@
+# Local research notes
+Project Reference.md
+docs/
+
+# Retired local experiment, not part of reproducible V1
+terra_base_ws/src/go2_driver/
+
+# Local IDE / assistant state
+.claude/settings.local.json
+.vscode/
+.idea/
+
+# ROS / colcon generated files
+terra_base_ws/build/
+terra_base_ws/install/
+terra_base_ws/log/
+autonomous_exploration_development_environment/log/
+
+# Runtime data
+*.bag
+*.db3
+*.mcap
+rosbag2_*/
+
+# Python / build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# OS/editor noise
+.DS_Store
+*~

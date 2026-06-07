@@ -1,0 +1,92 @@
+go2_aede_bridge:
+  ros__parameters:
+    map_frame: map
+    odom_frame: odom
+    base_frame: base_link
+    sensor_frame: sensor
+    max_linear_speed: 0.3
+    max_lateral_speed: 0.2
+    max_yaw_rate: 0.5
+
+stepp_depth_projector:
+  ros__parameters:
+    map_frame: map
+    sensor_frame: sensor
+    min_depth: 0.2
+    max_depth: 5.0
+    pixel_stride: 2
+    voxel_size: 0.10
+    max_points: 120000
+    map_decay_time: 3.0
+    map_memory_radius: 6.0
+    clearing_depth_margin: 0.25
+    sync_slop: 1.5
+    publish_static_tf: true
+
+localPlanner:
+  ros__parameters:
+    vehicleLength: 0.60
+    vehicleWidth: 0.60
+    twoWayDrive: true
+    laserVoxelSize: 0.05
+    terrainVoxelSize: 0.2
+    useTerrainAnalysis: true
+    checkObstacle: true
+    checkRotObstacle: false
+    adjacentRange: 4.25
+    obstacleHeightThre: 0.18
+    groundHeightThre: 0.02
+    costHeightThre: 0.20
+    costScore: 0.10
+    useCost: true
+    pointPerPathThre: 2
+    minRelZ: -0.5
+    maxRelZ: 0.25
+    maxSpeed: 0.3
+    dirWeight: 0.02
+    dirThre: 90.0
+    dirToVehicle: false
+    pathScale: 1.25
+    minPathScale: 0.75
+    pathScaleStep: 0.25
+    pathScaleBySpeed: true
+    minPathRange: 1.0
+    pathRangeStep: 0.5
+    pathRangeBySpeed: true
+    pathCropByGoal: true
+    autonomyMode: true
+    autonomySpeed: 0.2
+    joyToSpeedDelay: 2.0
+    joyToCheckObstacleDelay: 5.0
+    goalClearRange: 0.5
+    goalX: 0.0
+    goalY: 0.0
+
+pathFollower:
+  ros__parameters:
+    pubSkipNum: 1
+    twoWayDrive: true
+    lookAheadDis: 0.5
+    yawRateGain: 7.5
+    stopYawRateGain: 7.5
+    maxYawRate: 28.6478897565
+    maxSpeed: 0.3
+    maxAccel: 0.8
+    switchTimeThre: 1.0
+    dirDiffThre: 0.1
+    stopDisThre: 0.2
+    slowDwnDisThre: 0.85
+    useInclRateToSlow: false
+    inclRateThre: 120.0
+    slowRate1: 0.25
+    slowRate2: 0.5
+    slowTime1: 2.0
+    slowTime2: 2.0
+    useInclToStop: false
+    inclThre: 45.0
+    stopTime: 5.0
+    noRotAtStop: false
+    noRotAtGoal: true
+    autonomyMode: true
+    autonomySpeed: 0.2
+    joyToSpeedDelay: 2.0
