@@ -15,12 +15,30 @@ terra_base_ws/build/
 terra_base_ws/install/
 terra_base_ws/log/
 autonomous_exploration_development_environment/log/
+log/
 
 # Runtime data
 *.bag
 *.db3
 *.mcap
 rosbag2_*/
+*.log
+
+# Local secrets / credentials
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.p12
+*.pfx
+*.crt
+*.cer
+*.token
+*.secret
+.netrc
+.ssh/
 
 # Python / build artifacts
 __pycache__/
