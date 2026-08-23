@@ -7,7 +7,7 @@ Rellis 3D dataset - https://github.com/unmannedlab/RELLIS-3D
   -> working on sequence 003, Full-stack Merged data: (15GB)
       link - [Full-stack Merged data: (15GB)](https://drive.google.com/file/d/1glJzgnTYLIB_ar3CgHpc_MBp5AafQpy9/view)
       
-( EDIT - moved to direct downloads, i will attack links below )
+( EDIT - moved to direct downloads, i will attach links below )
 
 EDIT:
   i found this is much easier to work with, instead of extracting topics from the bag file, direct download links are better. i will list them here if downloading again is necessary
